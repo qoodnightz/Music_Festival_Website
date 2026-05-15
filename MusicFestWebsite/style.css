@@ -1,0 +1,417 @@
+/* ------ BODY + MAIN ------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+    background: linear-gradient(#0e2048,#060c30);
+    color: white;
+}
+
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/*---HEADER---*/
+
+/* ----- NAVBAR  ----- */
+.main-navbar {
+    width: 100%;
+    height: 80px;
+    padding: 1rem 5%;
+    background: #080d2da4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(15px);
+    margin-bottom: 2rem;
+
+    /*makes everything straight yk yk                                                                                    the login button is now next to contact us*/
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+ 
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ADE8F4;
+    letter-spacing: 1px;
+    margin-right: auto;
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    /*makes space between login button and contact us */
+    margin-right: 30px;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 500;
+    /*removes the underline */
+    text-decoration: none;
+    color: #ADE8F4;
+    /*when hovering add smooth transition*/
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #CAF0F8;
+    text-shadow: 0 0 2px #CAF0F8;
+}
+
+
+
+/*-------INDEX.CSS FORM--------*/
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    color:#ffffff;
+    font-size: 3.5em;
+    text-shadow: 5px 5px 10px rgb(24, 58, 109);
+    text-align: center;
+    -webkit-text-stroke: 1px #ffffff;
+    
+    background-image: url(/images/hyde.jpg);
+    width: 300;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    background-size: cover;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.icons-area{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    color:ghostwhite;
+    font-family: "consolas", sans-serif;
+}
+/*--Box Container--*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.box{
+    width: 80%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 15px;
+
+}
+
+#box1{
+    flex-grow: 1;
+    background-color: #023E8A;
+    padding: 10px 20px;
+
+}
+
+#box2{
+    flex-grow:1;
+    background-color: #023E8A;
+    padding: 20px;
+}
+
+.artist-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;  
+    padding: 10px 0; 
+    overflow-x:scroll;
+}
+
+.artist-images::-webkit-scrollbar {
+    display: none;
+
+}
+.artist-images img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2px;
+    
+
+}
+
+
+
+
+/*-----LINEUP.CSS FORM-----*/
+/*make the cards a flexcbox but in a column */
+.container-lineup{
+    display: flex;
+    /*centers the card in the page and have spaces*/
+    justify-content: center;
+    flex-wrap: wrap; 
+  
+}
+
+/*create cards*/
+.card{
+    background-color: #0a1c3e;
+    color: rgb(193, 216, 237);
+    width: 330px;
+    height: auto;
+    /*spaces BETWEEN the cards*/
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.card-image{
+
+    background-color: aqua;
+    height: 180px;
+    margin: 5px 5px 10px 5px;
+    background-size: cover;
+    border-radius: 15px;
+    background-position: center;
+}
+/*images*/
+.Artist-1 {
+    background-image: url("/images/VV.webp");
+}
+.Artist-2 {
+    background-image: url("/images/Paramore.webp");
+}
+.Artist-3 {
+    background-image: url("/images/Cranberries.jpg");
+}
+.Artist-4 {
+    background-image: url("/images/deftones.jpg");
+}
+.Artist-5 {
+    background-image: url("/images/haloscene.jpg");
+}
+.Artist-6 {
+    background-image: url("/images/wisp.jpg");
+}
+
+.card:hover{
+    background-color: rgb(25, 57, 114);
+    color: rgb(247, 249, 255);
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+    
+}
+
+
+/*-----SCHEDULE.CSS FORM----*/
+.schedule-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25x;
+
+}
+
+.schedule-tabs input[type="radio"] {
+    display: none;
+}
+
+.schedule-tabs label{
+    padding: 25px;
+    background-color:rgb(195, 219, 237);
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+.schedule-tabs .tab{
+    color: #092c58;
+    font-family: "consolas", sans-serif;
+    font-weight: large;
+    width: 100%;
+    padding: 20px;
+    background: rgb(229, 242, 250);
+    order: 1; 
+    display: none;
+    border-radius: 0 10px 10px 10px;
+}
+
+.schedule-tabs .tab h2{
+    font-size: 1.3em;
+}
+
+.schedule-tabs input[type="radio"]:checked + label + .tab{
+    display: block;
+}
+
+.schedule-tabs input[type="radio"]:checked + label{
+    background-color: rgb(229, 242, 250);
+    
+}
+
+
+/*-----TICKET.CSS FORM------*/
+
+.container-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card-contact{
+    backdrop-filter: blur(10px);
+    color: rgb(206, 227, 245);
+    width: auto;
+    height: auto;
+    /*spaces BETWEEN the cards*/
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+div{
+    text-align: center;
+}
+
+label{
+    font-family: "consolas", "sans-serif";
+}
+
+.terms-condition{
+    max-width: 500px;
+    display: flex;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+    background-color: #364e8790;
+    border-radius: 20px;
+    
+}
+
+/*--Carousel Code--*/
+.carousel {
+    margin: 15px auto;
+    width: 90%;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    overflow-x: auto;
+
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+    /* removes scrollbar */
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    /*the animation is in the group cuz it has to be in the group not ovcerlofw stuff */
+    animation: spin 30s infinite linear;
+    padding-right: 1em;
+}
+
+.card-carousel {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    font-size: 3rem;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+    background-size: cover;
+}
+
+.Art-1{
+    background-image: url(/images/deft2.jpg);
+    background-position: center;
+}
+.Art-2{
+    background-image: url(/images/halo1.jpg);
+    background-position: center;
+}
+.Art-3{
+    background-image: url(/images/wis1.jpg);
+    background-position: center;
+}
+.Art-4{
+    background-image: url(/images/vira2.jpg);
+    background-position: center;
+}
+.Art-5{
+    background-image: url(/images/para1.jpg);
+    background-position: center;
+}
+.Art-6{
+    background-image: url(/images/cran2.jpg);
+}
+
+
+
+
+
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+/*----------------------------------*/
+/*----- BUTTONS ------*/
+.btns {
+    display: flex;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #90E0EF;
+    color: #013579;
+    box-shadow: 0 0 3px #ADE8F4;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #adf4f3;
+    box-shadow: 0 0 10px #9f51e4;
+}
+
+/*---- TICKET BUTTON ------- */
+.ticket-center{
+    justify-content: center;
+    margin:10px 0;
+    display: flex;
+}
+
+/*------- FOOTER ------*/
+footer{
+    background-color: #060b26bd;
+    text-align: center;
+    min-height: 50px;
+    padding: 15px 0;
+    color: #5c8bf7d3;
+}

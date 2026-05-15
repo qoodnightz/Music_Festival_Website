@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Ticket Booking2</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Comic+Relief:wght@400;700&family=Gabarito:wght@400..900&family=Germania+One&family=New+Rocker&family=Road+Rage&family=Rock+Salt&family=Rubik+Burned&family=Rubik+Dirt&family=Staatliches&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!--NAVBAR-->
+        <header></header>
+        <nav class="main-navbar">
+            <div class="logo">★SoundWave☆</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lineup.html">Artist Lineup</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="tickets.html">Book Ticket</a></li>
+            </ul>
+            <div class="btns">
+                <button class="btn">•ᴗ•</button>
+            </div>
+        </nav>
+
+        <!---TITLE--->
+        <h2 style="text-align: center; font-family: Gabarito, Comic Relief, sans-serif; font-size: 30px;">⋆ ˚｡Ticket Booking˚｡⋆</h2>
+        <br>
+    
+        <!--CONTACT FORM-->
+        <form id="contactForm" onsubmit="return contactForm(event)">
+            <div class="card-contact" style="height: auto;">
+                <div>
+                    <label for="fname">Enter your Contact Information</label>
+                        <br> 
+                        <input type="text" id="fname" name="fname" placeholder="First name" style="border-radius: 15px; padding: 0.2rem 0.8rem; border: none;" required>
+                        <input type="text" id="lastname" placeholder="Last name" style="border-radius: 15px; padding: 0.2rem 0.8rem; border: none;" required>
+                </div>
+                
+                <br>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="@ Email address" style="border-radius: 15px; padding: 0.2rem 0.8rem; border: none;" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" name="phone" placeholder="+ Phone number" style="border-radius: 15px; padding: 0.2rem 0.8rem; border: none;" required>
+                </div>
+                <br>
+                <div>
+                    <label for="quantity">Number of Tickets</label>
+                    <br>
+                    <input type="number" id="quantity" name="quantity" placeholder="Number of Tickets" min="0" max="8" style="border-radius: 10px; padding: 0.2rem 2.5rem; border: none; font-weight: 600;" required>
+                </div>
+                <br>
+                <div>
+                    <label for="ticketType">Ticket Type</label>
+                    <br>
+                    <select id="ticketType" name="ticket-type" style="border-radius: 10px; padding: 0.2rem 1.0rem; border: none; font-weight: 600;" required>
+                        <option value="General Admission">General Admission £120</option>
+                        <option value="VIP">VIP £280</option>
+                        <option value="Premium">Premium £380</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="payment">Payment method</label>
+                    <br>
+                    <select id="payment" name="payment" style="border-radius: 10px; padding: 0.2rem 1.0rem; border: none; font-weight: 600;" required>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="Debit Card">Debit Card</option>
+                        <option value="PayPal">PayPal</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="special-requirement" >Special Requirements</label>
+                    <br>
+                    <textarea rows="3" cols="38" style="resize: none; text-align: center; padding-top: 15px;" placeholder="Enter Special Requirements"></textarea>
+                </div>
+            </div>
+                <br>
+                <!--TERMS AND CONDITION SECTION + SUBMIT AND RESET-->
+                <div class="card-contact">
+
+                    <div> 
+                        <label for="Terms" style="font-weight: 600; font-size: large;">Terms and Conditions agreement</label> 
+                        <div class="terms-condition">
+                            <pr>1. Introduction: Welcome to ★SoundWave☆. These terms and conditions 
+                            outline the rules and regulations for the use of our services.<br>
+                            2. Payment Terms: Payment is due within 10 days of invoice.
+                            We accept bank transfers, Credit cards, and PayPal. <br>
+                            3. Returns and Refunds: You may return the tickets within 6 days of receipt 
+                            for a full refund, DO NOT buy tickets from other website. <br>
+                            4. Privacy Policy: Before you continue using our website, we suggest you to read
+                            our privacy policy regarding our user data collection. It will help you better understand
+                            our practes. <br>
+                            5. Limitation on liability: ★SoundWave☆ is NOT liable for any damages that may 
+                            occur to you as a result of your misuse of our website.
+                            </pr>
+                            <br>
+                        </div>
+                    <input type="checkbox" id="Terms" name="Terms" style="transform: scale(2); margin: 15px;" required>
+                </div>
+
+                <div>
+                    <input type="reset" class ="btn" style="border-radius: 15px; padding: 0.4rem 1.5rem; border: none; font-weight: 600;">
+                </div>
+                <br>
+
+                <div>
+                <button type="submit" class="btn" style="border-radius: 22px; padding: 0.5rem 1.4rem; border: none; font-weight: 700; font-size: large;">Submit</button>
+                </div>
+                <br>
+
+        </form>
+
+        <br>
+        <h4 style="text-align: center; font-family:Gabarito; font-size: 20px;"> Don't miss out MusicFest 2025!</h4>
+
+        <!---CAROUSEL PICTURE ARTIST -->
+         <div class="carousel">
+            <div class="group">
+                <div class="card-carousel Art-1"></div>
+                <div class="card-carousel Art-2"></div>
+                <div class="card-carousel Art-3"></div>
+                <div class="card-carousel Art-4"></div>
+                <div class="card-carousel Art-5"></div>
+                <div class="card-carousel Art-6"></div>
+            </div>
+            <div aria-hidden class="group">
+                <div class="card-carousel Art-1"></div>
+                <div class="card-carousel Art-2"></div>
+                <div class="card-carousel Art-3"></div>
+                <div class="card-carousel Art-4"></div>
+                <div class="card-carousel Art-5"></div>
+                <div class="card-carousel Art-6"></div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer style="font-family: consolas;">. Nina Heegaard ♪ ↻◁ || ▷↺ ⩇⩇:⩇⩇ .</footer>
+
+        
+
+        <!--SCRIPTING -->
+        <script type="text/javascript">
+            function contactForm(event) {
+                event.preventDefault();
+                var fname = document.getElementById("fname").value;
+                var lastname = document.getElementById("lastname").value;
+                var email = document.getElementById("email").value;
+                var payment = document.getElementById("payment").value;
+
+                /*--- CHECK IF ANY ERROR in inputs if so it will display an appropriate error message. ---*/
+                /* use || for the OR operation*/
+                if (fname === " " || lastname === " " || email === " ") {
+                    alert("Please fill in all the required contact information form.");
+                    return false;
+                }
+                if (fname === fname.toUpperCase()) {
+                    alert("Please enter your name in Standard capitalisation (e.g., Malcolm Todd).");
+                    return false;
+                }
+                if(lastname === lastname.toUpperCase()) {
+                    alert("Please enter your last name in Standard capitalisation (e.g., Malcolm Todd).");
+                    return false;
+                }
+
+                /*---TICKET MATH---*/
+                var quantity = document.getElementById("quantity").value;
+                var ticketType = document.getElementById("ticketType").value;
+
+                var price =0;
+                if (ticketType == "General Admission") {
+                    price = 120; 
+                }
+                else if (ticketType == "VIP") {
+                    price = 280;
+                }
+                else if (ticketType == "Premium") {
+                    price = 380;
+                }
+
+                var total = price * quantity;
+
+                //POP screeeeeeeeeeeen
+                var costMessage = "Thank you for purchasing " + quantity + " " + ticketType + "ticket!";
+                var totalMessage = " The total cost is £" + total + ", and will be paid in " + payment + ".";
+                var receiptMessage = "Your online receipt will be sent to " + email + ".";
+                var purchaseMessage = "We can't wait to see you " + fname + " " + lastname + " at the MusicFest2025!";
+                
+                alert (costMessage + totalMessage + "\n" + receiptMessage + "\n" + purchaseMessage);
+                return false;
+            }
+        </script>
+
+
+    </body>
+</html>
